@@ -1,0 +1,17 @@
+def which_prize(score):
+	prize = None
+	if score <= 50:
+		prize = "Congratulations! You have won a wooden rabbit!"
+	elif score <= 150:
+		prize = None
+	elif score <= 180:
+		prize = "Congratulations! You have won a wafer-thin mint!"
+	elif score <= 200:
+		prize = "Congratulations! You have won a penguin!"
+	
+	if prize:
+		return prize
+	else:
+		return "Oh dear, no prize this time."
+	
+print(which_prize(190))
